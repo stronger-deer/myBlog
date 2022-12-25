@@ -51,11 +51,11 @@
   padding: 19rem 0 10rem;
 }
 
-.youtube {
+.video {
   padding: 10rem 0;
 }
 
-.youtube .max-width {
+.video .max-width {
   grid-template:
     'post title' auto
     'post more' 1fr / 3fr 1fr;
