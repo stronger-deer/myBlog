@@ -1,0 +1,26 @@
+main {
+  flex-grow: 1;
+}
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #000;
+  height: clamp(40rem, 70 / var(--max-width) * 100vw, 70rem);
+}
+.visual img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.visual h2 {
+  font-size: clamp(4em, 20 / var(--max-width) * 100vw, 20rem);
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  text-align: center;
+}
