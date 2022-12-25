@@ -1,0 +1,48 @@
+/* 
+  min(): 쉼표로 구분된 표현식 목록에서 가장 작은 값을 선택합니다.
+  max(): 쉼표로 구분된 표현식 목록에서 가장 큰 값을 선택합니다.
+  clamp(): 설정된 이상적인 값을 기준으로 상한과 하한 사이의 값을 고정합니다.      
+*/
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+/* safari 버그 : 모바일 사파리 브라우저 화면에서 
+높이값을 100vh로 줄 경우, 주소창이 하단을 가리는 현상을 해결하기 위한 CSS
+https://notes.zander.wtf/ios-safari-height-bug
+*/
+@supports (-webkit-touch-callout: none) {
+  .wrap {
+    min-height: -webkit-fill-available;
+  }
+}
+.max-width {
+  background: rgba(0, 0, 0, 0.2);
+  /* 최대 너비 1224px, 뷰포트 가로너비가 1224px 이하일때 좌우 5vw의 여백 주기 */
+  width: min(calc(var(--max-width) * 1rem), calc(100% - 10vw));
+  height: 100%;
+  margin: auto;
+}
+
+header {
+  background: salmon;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+  background: sandybrown;
+  padding-top: 5em;
+  flex-grow: 1;
+}
+
+footer {
+  background: slateblue;
+  height: 5em;
+}
