@@ -26,14 +26,8 @@ https://notes.zander.wtf/ios-safari-height-bug
   margin: auto;
 }
 
-
 main {
   background: sandybrown;
   padding-top: 5em;
   flex-grow: 1;
-}
-
-footer {
-  background: slateblue;
-  height: 5em;
 }

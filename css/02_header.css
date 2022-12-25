@@ -42,7 +42,6 @@ header h1 a img {
   width: 100%;
   height: 3.2em;
   padding: 0;
-  border: none;
   border: 1px solid rgba(var(--rgb-light), 0.5);
   border-radius: calc(var(--border-radius) * 5);
   overflow: hidden;
@@ -55,7 +54,7 @@ header h1 a img {
   text-transform: uppercase;
   font-size: 0.85em;
 }
-.search button[type="submit"] {
+.search button[type='submit'] {
   position: absolute;
   top: 50%;
   right: 0.5em;
@@ -65,7 +64,7 @@ header h1 a img {
   transform: translateY(-50%);
   border-radius: calc(var(--border-radius) * 5);
 }
-.search button[type="submit"] img {
+.search button[type='submit'] img {
   width: 100%;
   height: 100%;
 }

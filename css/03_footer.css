@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  background: var(--c-light-gray);
+  color: var(--c-text-light);
+}
+footer strong {
+  font-weight: bold;
+}
+.btn-top {
+  position: fixed;
+  bottom: 0rem;
+  right: 1rem;
+  width: 3em;
+  height: 3em;
+  box-sizing: border-box;
+  padding-top: 1.3em;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  background: rgb(var(--rgb-main)) url(../img/arrow_top.svg) no-repeat 50% 0 /
+    2em;
+  color: rgb(var(--rgb-light));
+  text-align: center;
+}
