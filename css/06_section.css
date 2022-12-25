@@ -7,8 +7,24 @@
 }
 .grid-section .title {
   grid-area: title;
-  padding-right: 4.8rem;
-  background: salmon;
+}
+.grid-section .title h2 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.grid-section .title p {
+  font-size: 1.4rem;
+  color: var(--c-text-light);
+  text-align: justify;
+  word-break: break-all;
+
+  /* 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .grid-section .post-list {
@@ -17,8 +33,19 @@
 }
 .grid-section .more {
   grid-area: more;
-  background: sandybrown;
+  align-self: start;
+  justify-self: start;
 }
+
+.more {
+  background: rgba(var(--rgb-dark), 0.8);
+  color: rgb(var(--rgb-light));
+  border-radius: var(--border-radius);
+  padding: 0.2em 0.8em;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
 .lastest {
   background: var(--c-light-gray);
   padding: 19rem 0 10rem;
