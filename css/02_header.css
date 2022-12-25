@@ -1,0 +1,85 @@
+header {
+  height: 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(var(--rgb-dark), 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+header .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+header h1 {
+  margin: auto auto auto 0;
+}
+header h1 a {
+  padding: 0.4rem;
+  border-radius: var(--border-radius);
+}
+
+header h1 a img {
+  width: auto;
+  height: 2em;
+}
+
+/* 검색 */
+.search {
+  position: relative;
+  flex: 0 1 12em;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.search:hover {
+  opacity: 1;
+}
+.search input {
+  width: 100%;
+  height: 3.2em;
+  padding: 0;
+  border: none;
+  border: 1px solid rgba(var(--rgb-light), 0.5);
+  border-radius: calc(var(--border-radius) * 5);
+  overflow: hidden;
+  background: none;
+  color: rgb(var(--rgb-light));
+  text-indent: 1em;
+}
+.search input::placeholder {
+  color: rgb(var(--rgb-light));
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+.search button[type="submit"] {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  width: 2.2em;
+  height: 2.2em;
+  padding: 0.3em;
+  transform: translateY(-50%);
+  border-radius: calc(var(--border-radius) * 5);
+}
+.search button[type="submit"] img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 프로필 버튼 */
+.btn-profile {
+  flex-shrink: 0;
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: calc(var(--border-radius) * 5);
+  overflow: hidden;
+}
+.btn-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -11,13 +11,37 @@
   <link rel="stylesheet" href="./css/00_reset.css">
   <link rel="stylesheet" href="./css/00_common.css">
   <link rel="stylesheet" href="./css/01_layout.css">
+  <link rel="stylesheet" href="./css/02_header.css">
 </head>
 
 <body>
   <div class="wrap">
+    <!-- header -->
     <header>
-      <div class="max-width">header</div>
+      <div class="max-width">
+        <h1>
+          <a href="./">
+            <picture>
+              <source media="(max-width: 500px)" srcset="./img/logo_icon.svg">
+              <source media="(min-width: 501px)" srcset="./img/logo.svg">
+              <img src="./img/logo.svg" alt="My Blog">
+            </picture>
+          </a>
+        </h1>
+
+        <form class="search">
+          <label for="search" class="sr-only">검색</label>
+          <input id="search" type="text" placeholder="search">
+          <button type="submit"><img src="./img/icon-search.svg" alt="검색"></button>
+        </form>
+
+        <button type="button" class="btn-profile">
+          <img src="./img/profile.jpg" alt="프로필">
+        </button>
+      </div>
     </header>
+    <!-- //header -->
+
     <main>
       <div class="max-width">main</div>
     </main>
