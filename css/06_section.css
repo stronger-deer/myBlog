@@ -60,6 +60,18 @@
     'post more' 1fr / 3fr 1fr;
 }
 
+@media (min-width: 1025px) {
+  .lastest .max-width > .title {
+    padding-right: 4.8rem;
+  }
+  .video .max-width > .title {
+    padding-left: 4.8rem;
+  }
+  .video .max-width > .more {
+    margin-left: 4.8rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .grid-section .max-width {
     position: relative;
@@ -73,6 +85,7 @@
     padding: 5rem 0;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .grid-section .more {
     position: absolute;
