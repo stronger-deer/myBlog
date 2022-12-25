@@ -1,0 +1,85 @@
+.post-list {
+  display: grid;
+  gap: 2.4rem;
+  align-content: start;
+  justify-content: start;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 769px) {
+  /* video */
+  .video .post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .post-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card a {
+  background: rgb(var(--rgb-light));
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.video .card a {
+  background: var(--c-light-gray);
+}
+
+.card .thumbnail {
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+  position: relative;
+}
+
+.card .thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card .title,
+.card .description {
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.card .title {
+  font-size: 1.2em;
+  line-height: 1.2;
+  font-weight: bold;
+  -webkit-line-clamp: 2;
+  height: 2.4em;
+}
+.card .date {
+}
+
+.card .date,
+.card .description {
+  font-size: 0.9em;
+  color: var(--c-text-light);
+}
+.card .description {
+  -webkit-line-clamp: 3;
+  height: 4em;
+}

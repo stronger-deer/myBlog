@@ -29,7 +29,6 @@
 
 .grid-section .post-list {
   grid-area: post;
-  background: slateblue;
 }
 .grid-section .more {
   grid-area: more;
@@ -59,4 +58,31 @@
   grid-template:
     'post title' auto
     'post more' 1fr / 3fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .grid-section .max-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .lastest {
+    padding: 12rem 0 5rem;
+  }
+  .video {
+    padding: 5rem 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-section .more {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .grid-section .more {
+    margin: auto;
+    padding: 0.6em 2em;
+  }
 }
