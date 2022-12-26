@@ -2,6 +2,8 @@
   position: relative;
   margin: -9rem auto;
   z-index: 1;
+  border-radius: calc(var(--border-radius) * 15);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
 }
 .best a {
   position: relative;
@@ -11,7 +13,6 @@
   height: clamp(14rem, 18 / var(--max-width) * 100vw, 18rem);
   padding: 0 4rem;
   border-radius: calc(var(--border-radius) * 15);
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   color: rgb(var(--rgb-light));
 }
@@ -32,7 +33,7 @@
 }
 
 .best h2::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 0.6em;
   height: 0.6em;
@@ -47,7 +48,7 @@
 }
 .best .read::after,
 .best .read::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
